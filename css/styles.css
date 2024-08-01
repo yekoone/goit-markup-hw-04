@@ -24,18 +24,7 @@ section{
     padding: 120px 0;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 
 .section-text{
     line-height: 1.5;
@@ -178,6 +167,7 @@ section{
 
 /* ------- Main Alanı Başlangıç -------- */
 
+/*Hero Kısmı Başlangıç*/
 .hero{
     max-width: 1440px;
     margin: 0 auto;
@@ -226,7 +216,42 @@ section{
 .button:focus{
     background-color:#404BBF;
 }
+/*Hero Kısmı Bitiş*/
 
+
+/*Birinci Kısım Başlangıç*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-one-li{
+    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);    
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+}
+/*Birinci Kısım Bitiş*/
+
+
+/*İkinci (Team) Kısım Başlangıç*/
 .team-box{
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
@@ -240,6 +265,43 @@ section{
     text-align: center;
 }
 
+.section-two .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+  }
+  
+.section-two .social-list .list-item {
+    width: 40px;
+    height: 40px;
+  }
+
+.section-two .social-list .list-item .social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+.social-icon {
+    fill: #f4f4fd;
+  }
+  
+.section-two .social-list .list-item .social-link:hover,
+.section-two .social-list .list-item .social-link:focus {
+    background-color: #404bbf;
+  }
+
+/*İkinci (Team) Kısım Başlangıç*/
+
+
+/*Üçüncü (Portfolio) Kısım Kısım Başlangıç*/
+
 .portfolio-wrap{
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -252,73 +314,22 @@ section{
 .portfolio-li:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-li .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 112px;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    border: 1px solid #8e8f99;
-  }
 
-
-  .section-two .social-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 16px;
-  }
-  
-  .section-two .social-list .list-item {
-    width: 40px;
-    height: 40px;
-  }
-  
-  
-  
-  .section-two .social-list .list-item .social-link {
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .social-icon {
-    fill: #f4f4fd;
-  }
-  
-  .section-two .social-list .list-item .social-link:hover,
-  .section-two .social-list .list-item .social-link:focus {
-    background-color: #404bbf;
-  }
-
-  .section-ul .portfolio-li:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  }
-  
-
-  .section-ul .portfolio-li .image-container {
+.section-ul .portfolio-li .image-container {
     width: 360px;
     height: 300px;
     overflow: hidden;
     position: relative;
-  }
+}
   
-  .section-ul .portfolio-li .image-container img {
+.section-ul .portfolio-li .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-  }
+}
 
-  .section-ul .portfolio-li .image-container .img-text {
+.section-ul .portfolio-li .image-container .img-text {
     position: absolute;
     top: 0;
     font-size: 16px;
@@ -331,11 +342,13 @@ section{
     width: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
   
- .section-ul .portfolio-li:hover .image-container .img-text {
+.section-ul .portfolio-li:hover .image-container .img-text {
     transform: translateY(0);
-  }
+}
+  /*Üçüncü (Portfolio) Kısım Kısım Başlangıç*/
+
 
 /* ------- Main Alanı Bitiş -------- */
 
