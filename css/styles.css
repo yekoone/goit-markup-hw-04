@@ -160,9 +160,18 @@ section{
 /* ------- Main Alanı Başlangıç -------- */
 
 .hero{
-    /* background-color: #2E2F42; */
-    padding: 188px 0;
     max-width: 1440px;
+    margin: 0 auto;
+    padding: 188px 0;
+    background-color: #2e2f42;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/herobg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
 .hero-header{
     font-weight: 700;
@@ -174,12 +183,7 @@ section{
     max-width: 496px;
     margin: 0 auto;
 }
-.hero-image{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 .button{
     font-weight: 500;
     font-family: var(--font-family);
